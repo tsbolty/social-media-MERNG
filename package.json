@@ -1,0 +1,30 @@
+{
+  "name": "social-media-MERNG",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsbolty/social-media-MERNG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsbolty/social-media-MERNG/issues"
+  },
+  "homepage": "https://github.com/tsbolty/social-media-MERNG#readme",
+  "dependencies": {
+    "apollo-server": "^2.25.2",
+    "concurrently": "^6.2.0",
+    "if-env": "^1.0.4"
+  }
+}
