@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu } from "semantic-ui-react";
-import { Link, params } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const MenuBar = () => {
 	const pathname = window.location.pathname;
