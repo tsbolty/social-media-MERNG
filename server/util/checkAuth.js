@@ -3,7 +3,6 @@ const { SECRET_KEY } = require("../config");
 const { AuthenticationError } = require("apollo-server");
 
 module.exports = context => {
-	console.log("checking auth");
 	const authHeader = context.req.headers.authorization;
 	if (authHeader) {
 		const token = authHeader.split("Bearer ")[1];
