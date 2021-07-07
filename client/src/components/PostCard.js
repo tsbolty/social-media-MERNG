@@ -27,7 +27,7 @@ function PostCard({
 				<Image
 					floated='right'
 					size='mini'
-					src='https://react.semantic-ui.com/images/avatar/large/molly.png'
+					src='https://lh3.googleusercontent.com/6MpDLxV7PTVv55SR09Llzi_vOjyAvaNPbMMFTceu3WAFU3mZU-TWpBLY26QBL5r52xrUBzqP3guBdESxtoC8MUuGVsIz4V4tzKs8-LvgMpcdKuBWt9l9xMB6WgvMWIvDW4BIqJW3xQBVbkbxJdclyim6U-lCAW19EGYLYGKG37zIC4dzYjPHBOn9f7ArFGMZT3ikTPrWP8dL9wNJlSf7tXrn4lLXG2JDOUKC-fRFBUoQ719UukcwKOBqs2om7K1035OmcfBIC-7EKmRl9H6OPzqf1jHr46HSy1Uj6-8uXyXTWnO0rh7sNtjivbB6E0X33IJJyaktwbZUjwEdSjVgBkvBaxzSxEGxHKhBJuGZb3aqvaLMbTDSZzH8pzraeTgqbWNxDpII31Yf4lvdOLzDYl7f3joRsg6YILnQAKJyO9xkZLo_SOYHVhNQdb96M9_rVM1WaL4WY_mxz_bHIkuUd6qrVmFBP_P5ErGxgaG9edhXNZeRt5ofpZVtHm1C6txaF9usdsow9qSBLqtnnTZORN65fs1U3yB6ixEUcjnfu4ETzw9rSrbTW20pqoiJcwCBnAqDHGlsDD_cRvDQCPaTKRRarwiHUpboDAh7Gh7p48Crj3Vk7ybcOIf5S5pDuVeF1zfSnDJqEktSMEbRPNtGolg7aJLDzcAyL2AONgNzsvmfpo7P2X7RpEXYNSdTL7CYb1cQX4_9mo_9YxJFhpvoSBM=s969-no?authuser=0'
 				/>
 				<Card.Header>{username}</Card.Header>
 				<Card.Meta as={Link} to={`/posts/${id}`}>

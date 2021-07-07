@@ -40,7 +40,7 @@ const userResolvers = {
 				throw new UserInputError("Wrong credentials", { errors });
 			}
 
-			const token = generateToken(user);
+			const token = await generateToken(user);
 
 			return {
 				...user._doc,
@@ -49,10 +49,10 @@ const userResolvers = {
 			};
 		},
 
-		async register(
+		register: async (
 			_,
 			{ registerInput: { username, email, password, confirmPassword } }
-		) {
+		) => {
 			const { valid, errors } = validateRegisterInput(
 				username,
 				email,
